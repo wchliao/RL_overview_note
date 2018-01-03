@@ -19,50 +19,30 @@ Note that the version of the paper this note takes on may not be the latest. To 
 ### Category
 
 * Supervised learning
-
   * Classification 
-  
   * Regression
-
-* Unsupervised learning: representation learning 
-
+* Unsupervised learning: representation learning
   * Clustering 
-  
   * Density estimation
-
 * Reinforcement learning
 
 ### Elements
 
 * Dataset
-
   * Non-overlapping training, validation and testing subsets
-
 * Cost/Loss function
-
   * Category
-
     * Training error measures the error on the training data
-	
     * Generalization error, or test error, measures the error on new input data
-	
   * Measurement
-  
     The following measurements are equivalent.
-  
     * Maximum likelihood estimation (MLE)
-	
 	* Minimize KL divergence
-	
 	* Minimize the cross-entropy
-	
 	* negative log-likelihodd (NLL)
-
 * Optimization procedure
-
   * Gradient descent 
   * Stochastic gradient descent
-
 * Model
 
 ## Deep Learning
@@ -70,49 +50,35 @@ Note that the version of the paper this note takes on may not be the latest. To 
 ### Algorithms
 
 * Linear regression
-
 * Logistic regression
-
 * Support vector machine (SVM)
-
 * Decision tree
-
 * Boosting
 
 ### Elements
 
 * Input layer
-
 * Output layer
-
 * Hidden layers
 
 ### Activation Function
 
 * Logistic
-
 * tanh
-
 * Rectified linear unit (ReLU)
 
 ### Networks
 
 * Multilayer perceptron (MLP)
-
 * Convolutional neural network (CNN)
-
 * Recurrent neural network (RNN)
-
   * Long short term memory network (LSTM)
-  
   * Gated recurrent unit (GRU)
 
 ### Others
 
  * Gradient backpropagation: used for training all deep neural networks
- 
  * Dropout
- 
  * Batch normalization: normalize each training mini-batch to accelerate training by reducing internal coveriate shift
 
 
@@ -122,7 +88,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 ### Fundamental Elements
 
  * State: ![state](pic/01.gif)
-
+ 
  * Policy: ![policy](pic/02.gif)
  
  * Reward: 
@@ -136,7 +102,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
  * State value
  
    ![state value](pic/04.gif)
- 
+   
  * Optimal state value: 
  
    ![optimal state value](pic/05.gif)
