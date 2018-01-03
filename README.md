@@ -18,11 +18,13 @@ To understand more about the details of reinforcement learning, please scrutiniz
 * Supervised learning
 
   * Classification 
+  
   * Regression
 
 * Unsupervised learning: representation learning 
 
   * Clustering 
+  
   * Density estimation
 
 * Reinforcement learning
@@ -38,6 +40,7 @@ To understand more about the details of reinforcement learning, please scrutiniz
   * Category
 
     * Training error measures the error on the training data
+	
     * Generalization error, or test error, measures the error on new input data
 	
   * Measurement
@@ -45,8 +48,11 @@ To understand more about the details of reinforcement learning, please scrutiniz
     The following measurements are equivalent.
   
     * Maximum likelihood estimation (MLE)
+	
 	* Minimize KL divergence
+	
 	* Minimize the cross-entropy
+	
 	* negative log-likelihodd (NLL)
 
 * Optimization procedure
@@ -55,6 +61,56 @@ To understand more about the details of reinforcement learning, please scrutiniz
   * Stochastic gradient descent
 
 * Model
+
+### Deep Learning
+
+#### Algorithms
+
+* Linear regression
+
+* Logistic regression
+
+* Support vector machine (SVM)
+
+* Decision tree
+
+* Boosting
+
+#### Elements
+
+* Input layer
+
+* Output layer
+
+* Hidden layers
+
+#### Activation Function
+
+* Logistic
+
+* tanh
+
+* Rectified linear unit (ReLU)
+
+#### Networks
+
+* Multilayer perceptron (MLP)
+
+* Convolutional neural network (CNN)
+
+* Recurrent neural network (RNN)
+
+  * Long short temr memory network (LSTM)
+  
+  * Gated recurrent unit (GRU)
+
+#### Others
+
+ * Gradient backpropagation: used for training all deep neural networks
+ 
+ * Dropout
+ 
+ * Batch normalization: normalize eachh training mini-batch to accelerate training by reducing internal coveriate shift
 
 
 
