@@ -121,6 +121,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
  * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
  
+ * If RL problem satisfies the Markov property, it is define by the 5-tuple ![5-tuple](pic/16.gif).
+ 
  * TD learning is usually refer to the learning methods for value function evaluation
  
  * Update rule
@@ -141,9 +143,42 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
  * **It is still unclear what is the root cause for instability. There are still many open problems in off-policy learning.**
 
+### Policy Optimization
 
+ * Advantage: ![advantage](pic/13.gif)
+ 
+   Here the value function V(s) is the baseline.
 
+ * REINFORCE: an policy-based algorithm.
+ 
+   ![REINFORCE](pic/14.png)
+ 
+ * Actor-Critic: the critic updates action-value function parameters, and the actor updates policy parameters, in the direction suggested by the critic.
+ 
+   ![Actor-Critic](pic/15.png)
+ 
+ * **The distinct difference between a "shallow" RL and a deep RL is what function approximator is used.**
 
+### Reinforcement Learning Parlance
+
+#### Problems
+
+ * Prediction problem (policy evaluation): compute the state or action value function for a policy
+ * Control problem: find the optimal policy
+ * Planning problem: construct a value function or a policy with a model
+ 
+#### Policy
+
+ * On-policy: evaluate or improve the behavioural policy (same-policy)
+ * Off-policy: learn an optimal value function or policy, maybe following an unrelated behavioural policy (different-policy)
+
+#### Others
+
+ * Exploration-exploitation dilemma: The agent needs to exploit the currently best action, yet it has to explore the environment to find better actions.
+ * Model-free: The agent learn with trail-and-error from experience explicitly. The model is not known or learned from experience.
+ * Online mode: Models are trained on data acquired in sequence
+ * Offline mode (batch mode): Models are trained on the entire data set.
+ * Bootstrapping: an estimate of sate or action value is updated from subsequent estimates.
 
 
 
