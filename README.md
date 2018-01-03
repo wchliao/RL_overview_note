@@ -1,6 +1,7 @@
 # Note: "Deep Reinforcement Learning: An Overview"
 
 
+
 ## Introduction
 
 This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](paper.pdf).
@@ -11,7 +12,11 @@ To understand more about the details of reinforcement learning, please scrutiniz
 
 Note that the version of the paper this note takes on may not be the latest. To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
 
+
+
 ## Note
+
+
 
 ### Machine Learning
 
@@ -150,10 +155,23 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![optimal action value](pic/08.gif)
    
-   
+#### Temporal Difference (TD) Learning
+
+ * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
  
-
-
+ * TD learning is usually refer to the learning methods for value function evaluation
+ 
+ * Update rule
+ 
+   ![value update rule](pic/09.gif)
+   
+ * TD error
+ 
+   ![TD error](pic/10.gif)
+ 
+ * Some algorithms
+ 
+   ![TD algorithms](pic/11.png)
 
 
 
