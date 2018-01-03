@@ -169,9 +169,17 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![TD error](pic/10.gif)
  
- * Some algorithms
+ * Some tabular algorithms
  
-   ![TD algorithms](pic/11.png)
+   ![tabular TD algorithms](pic/11.png)
+ 
+ * Algorithm with function approximation
+ 
+   ![algorithm with function approximation](pic/12.png)
+ 
+ * **It is still unclear what is the root cause for instability. There are still many open problems in off-policy learning.**
+ 
+ 
 
 
 
