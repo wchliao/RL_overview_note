@@ -14,13 +14,9 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 
 
-## Note
+## Machine Learning
 
-
-
-### Machine Learning
-
-#### Category
+### Category
 
 * Supervised learning
 
@@ -36,7 +32,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 * Reinforcement learning
 
-#### Elements
+### Elements
 
 * Dataset
 
@@ -69,9 +65,9 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 * Model
 
-### Deep Learning
+## Deep Learning
 
-#### Algorithms
+### Algorithms
 
 * Linear regression
 
@@ -91,7 +87,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 * Hidden layers
 
-#### Activation Function
+### Activation Function
 
 * Logistic
 
@@ -99,7 +95,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 * Rectified linear unit (ReLU)
 
-#### Networks
+### Networks
 
 * Multilayer perceptron (MLP)
 
@@ -111,7 +107,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
   
   * Gated recurrent unit (GRU)
 
-#### Others
+### Others
 
  * Gradient backpropagation: used for training all deep neural networks
  
@@ -121,9 +117,9 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 
 
-### Reinforcement Learning
+## Reinforcement Learning
 
-#### Problem Setup
+### Fundamental Elements
 
  * State: ![state](pic/01.gif)
 
@@ -133,7 +129,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![discounted reward](pic/03.gif)
 
-#### Value Function
+### Value Function
 
  The following decomposition uses [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation).
 
@@ -155,7 +151,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![optimal action value](pic/08.gif)
    
-#### Temporal Difference (TD) Learning
+### Temporal Difference (TD) Learning
 
  * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
  
@@ -178,8 +174,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
    ![algorithm with function approximation](pic/12.png)
  
  * **It is still unclear what is the root cause for instability. There are still many open problems in off-policy learning.**
- 
- 
+
 
 
 
