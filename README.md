@@ -9,6 +9,8 @@ This note only lists the most important concepts in this paper. Most of the idea
 
 To understand more about the details of reinforcement learning, please scrutinize the paper.
 
+Note that the version of the paper this note takes on may not be the latest. To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
+
 ## Note
 
 ### Machine Learning
