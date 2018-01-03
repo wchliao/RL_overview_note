@@ -79,7 +79,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 * Boosting
 
-#### Elements
+### Elements
 
 * Input layer
 
