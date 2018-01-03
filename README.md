@@ -6,6 +6,8 @@
 
 This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](paper.pdf).
 
+I will focus on the technical part, which is Chapter 1 ~ 4.
+
 This note only lists the most important concepts in this paper. Most of the idea may not be eliborated. Only key words are mentioned in the note.
 
 To understand more about the details of reinforcement learning, please scrutinize the paper.
