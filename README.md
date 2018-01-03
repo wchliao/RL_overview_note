@@ -100,7 +100,7 @@ To understand more about the details of reinforcement learning, please scrutiniz
 
 * Recurrent neural network (RNN)
 
-  * Long short temr memory network (LSTM)
+  * Long short term memory network (LSTM)
   
   * Gated recurrent unit (GRU)
 
@@ -110,8 +110,46 @@ To understand more about the details of reinforcement learning, please scrutiniz
  
  * Dropout
  
- * Batch normalization: normalize eachh training mini-batch to accelerate training by reducing internal coveriate shift
+ * Batch normalization: normalize each training mini-batch to accelerate training by reducing internal coveriate shift
 
+
+
+### Reinforcement Learning
+
+#### Problem Setup
+
+ * State: ![state](pic/01.gif)
+
+ * Policy: ![policy](pic/02.gif)
+ 
+ * Reward: 
+ 
+   ![discounted reward](pic/03.gif)
+
+#### Value Function
+
+ The following decomposition uses [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation).
+
+ * State value
+ 
+   ![state value](pic/04.gif)
+ 
+ * Optimal state value: 
+ 
+   ![optimal state value](pic/05.gif)
+   
+   ![optimal state value](pic/06.gif)
+ 
+ * Action value
+ 
+   ![action value](pic/07.gif)
+   
+ * Optimal action value
+ 
+   ![optimal action value](pic/08.gif)
+   
+   
+ 
 
 
 
