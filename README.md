@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](https://arxiv.org/pdf/1701.07274.pdf).
+This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](paper.pdf).
 
 This note only lists the most important concepts in this paper. Most of the idea may not be eliborated. Only key words are mentioned in the note.
 
