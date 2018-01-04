@@ -8,7 +8,7 @@ This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](paper.pdf)
 
 I will focus on the technical part, which is Chapter 1 ~ 4.
 
-This note only lists the most important concepts in this paper. Most of the idea may not be eliborated. Only key words are mentioned in the note.
+This note only lists the most important concepts in this paper. Most of the idea may not be elaborated. Only key words are mentioned in the note.
 
 To understand more about the details of reinforcement learning, please scrutinize the paper.
 
@@ -41,7 +41,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
     * Maximum likelihood estimation (MLE)
 	* Minimize KL divergence
 	* Minimize the cross-entropy
-	* negative log-likelihodd (NLL)
+	* negative log-likelihood (NLL)
 * Optimization procedure
   * Gradient descent 
   * Stochastic gradient descent
@@ -81,7 +81,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
  * Gradient backpropagation: used for training all deep neural networks
  * Dropout
- * Batch normalization: normalize each training mini-batch to accelerate training by reducing internal coveriate shift
+ * Batch normalization: normalize each training mini-batch to accelerate training by reducing internal covariate shift
 
 
 
@@ -123,7 +123,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
  * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
  
- * If RL problem satisfies the Markov property, it is define by the 5-tuple ![5-tuple](pic/16.gif).
+ * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](pic/16.gif).
  
  * TD learning is usually refer to the learning methods for value function evaluation
  
