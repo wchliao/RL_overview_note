@@ -205,21 +205,36 @@ Note that the version of the paper this note takes on may not be the latest. To 
 [Dueling Architecture](https://arxiv.org/pdf/1511.06581.pdf)
 
 
-## Reference (Draft)
 
-[1] Deep Reinforcement Learning: An Overview
+## Reference 
 
-[2] Q-Learning
+1. Li, X. (2017). [Deep Reinforcement Learning: An Overview](https://arxiv.org/pdf/1701.07274.pdf). 
+   *arXiv preprint arXiv: 1701.07274*. 
 
-[3] Deep Q-Network
+2. Watkins, C. J. C. H. & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
+   *Machine Learning*, 8:279-292.
 
-[4] Double DQN
+3.  Mnih, V., Kavukcuoglu, K., Slver, D., Rusu, A. A., Veness, J., Bellemare, M. G.,
+    Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., 
+    Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., & Hassabis, D. (2015). 
+    [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). 
+    *Nature*, 518(7540):529-533.
 
-[5] Prioritized Experience Replay
+4. van Hasselt, H., Guez, A., & Silver, D. (2016a). 
+   [Deep reinforcement learning with double Q-learning](https://arxiv.org/pdf/1509.06461.pdf).
+   In *the AAAI Conference on Artificial Intelligence (AAAI)*.
 
-[6] Prioritized Experience Replay (DQN) (Tensorflow) 莫烦
+5. Schaul, T., Quan, J., Antonoglou, I., & Silver, D. (2016). 
+   [Prioritized experience replay](https://arxiv.org/pdf/1511.05952.pdf).
+   In *the International Conference on Learning Representations (ICLR)*.
 
-[7] Dueling Architecture
+6. Zhou, M. (2017). 
+   [Prioritized experience replay (DQN) (Tensorflow)](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/).
+   Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/
+
+7. Wang, Z., Schaul, T., Hessel, M., van Hasselt, H., Lanctot, M., & de Freitas, N. (2016b).
+   [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/pdf/1511.06581.pdf).
+   In *the International Conference on Machine Learning (ICML)*.
 
 
 
