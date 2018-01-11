@@ -47,6 +47,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
   * Stochastic gradient descent
 * Model
 
+
+
 ## Deep Learning
 
 ### Algorithms
@@ -123,7 +125,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
  * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
  
- * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](pic/16.gif).
+ * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](pic/18.gif).
  
  * TD learning is usually refer to the learning methods for value function evaluation
  
@@ -137,27 +139,31 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
  * Some tabular algorithms
  
-   ![tabular TD algorithms](pic/11.png)
+   ![TD algorithms](pic/11.png)
+   
+   ![SARSA](pic/12.png)
+   
+   ![Q learning](pic/13.png)
  
  * Algorithm with function approximation
  
-   ![algorithm with function approximation](pic/12.png)
+   ![algorithm with function approximation](pic/14.png)
  
  * **It is still unclear what is the root cause for instability. There are still many open problems in off-policy learning.**
 
 ### Policy Optimization
 
- * Advantage: ![advantage](pic/13.gif)
+ * Advantage: ![advantage](pic/15.gif)
  
    Here the value function V(s) is the baseline.
 
  * REINFORCE: an policy-based algorithm.
  
-   ![REINFORCE](pic/14.png)
+   ![REINFORCE](pic/16.png)
  
  * Actor-Critic: the critic updates action-value function parameters, and the actor updates policy parameters, in the direction suggested by the critic.
  
-   ![Actor-Critic](pic/15.png)
+   ![Actor-Critic](pic/17.png)
  
  * **The distinct difference between a "shallow" RL and a deep RL is what function approximator is used.**
 
@@ -188,7 +194,11 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 ### Q-Learning
 
-[Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf)
+ * Algorithm
+
+ ![Q learning](pic/13.png)
+ 
+ * Drawback: The maximum term cannot be easily obtained.
 
 ### Deep Q-Network (DQN)
 
