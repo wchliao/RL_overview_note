@@ -194,15 +194,27 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 ### Q-Learning
 
- * Algorithm
+#### Algorithm
 
  ![Q learning](pic/13.png)
  
- * Drawback: The maximum term cannot be easily obtained.
+#### Drawback
+ 
+ * The maximum term cannot be easily obtained.
 
 ### Deep Q-Network (DQN)
 
-[DQN](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+#### Algorithm
+ 
+ ![DQN](pic/19.png)
+
+#### Contributions
+
+ * Stabilize the training of action value function approximation with CNN using experience replay and target network
+ * Design an end-to-end RL approach, with only the pixels and the game score as inputs, so that only minimal domain 
+   knowledge is required
+ * Train a flexible network with the same algorithm, network architecture and hyperparameters to perform well on 
+   many different tasks
 
 ### DQN Extensions
 
