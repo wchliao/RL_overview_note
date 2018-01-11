@@ -180,7 +180,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
  * Model-free: The agent learn with trail-and-error from experience explicitly. The model is not known or learned from experience.
  * Online mode: Models are trained on data acquired in sequence
  * Offline mode (batch mode): Models are trained on the entire data set.
- * Bootstrapping: an estimate of sate or action value is updated from subsequent estimates.
+ * Bootstrapping: an estimate of state or action value is updated from subsequent estimates.
 
 
 
