@@ -184,5 +184,42 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
 
 
+## Value Function (Draft)
+
+### Q-Learning
+
+[Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf)
+
+### Deep Q-Network (DQN)
+
+[DQN](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+
+### DQN Extensions
+
+[Double DQN](https://arxiv.org/pdf/1509.06461.pdf)
+
+[Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf)
+
+[SumTree](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/)
+
+[Dueling Architecture](https://arxiv.org/pdf/1511.06581.pdf)
+
+
+## Reference (Draft)
+
+[1] Deep Reinforcement Learning: An Overview
+
+[2] Q-Learning
+
+[3] Deep Q-Network
+
+[4] Double DQN
+
+[5] Prioritized Experience Replay
+
+[6] Prioritized Experience Replay (DQN) (Tensorflow) 莫烦
+
+[7] Dueling Architecture
+
 
 
