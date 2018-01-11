@@ -236,7 +236,7 @@ Note that the version of the paper this note takes on may not be the latest. To 
 2. Watkins, C. J. C. H. & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
    *Machine Learning*, 8:279-292.
 
-3.  Mnih, V., Kavukcuoglu, K., Slver, D., Rusu, A. A., Veness, J., Bellemare, M. G.,
+3.  Mnih, V., Kavukcuoglu, K., Sliver, D., Rusu, A. A., Veness, J., Bellemare, M. G.,
     Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., 
     Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., & Hassabis, D. (2015). 
     [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). 
