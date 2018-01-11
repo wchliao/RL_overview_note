@@ -8,11 +8,13 @@ This is a note of [Deep Reinforcement Learning: An Overview, Yuxi Li](paper.pdf)
 
 I will focus on the technical part, which is Chapter 1 ~ 4.
 
-This note only lists the most important concepts in this paper. Most of the idea may not be elaborated. Only key words are mentioned in the note.
+This note only lists the most important concepts in this paper. Most of the idea may not be elaborated. 
+Only key words are mentioned in the note.
 
 To understand more about the details of reinforcement learning, please scrutinize the paper.
 
-Note that the version of the paper this note takes on may not be the latest. To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
+Note that the version of the paper this note takes on may not be the latest. 
+To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
 
 
 
@@ -83,7 +85,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
 
  * Gradient backpropagation: used for training all deep neural networks
  * Dropout
- * Batch normalization: normalize each training mini-batch to accelerate training by reducing internal covariate shift
+ * Batch normalization: normalize each training mini-batch to accelerate training by 
+   reducing internal covariate shift
 
 
 
@@ -123,7 +126,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
    
 ### Temporal Difference (TD) Learning
 
- * Markov Decision Process (MDP): satisfy Markov property, i.e., the future depends only on the current state and action, but not on the past  
+ * Markov Decision Process (MDP): satisfy Markov property, 
+   i.e., the future depends only on the current state and action, but not on the past  
  
  * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](pic/18.gif).
  
@@ -149,7 +153,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![algorithm with function approximation](pic/14.png)
  
- * **It is still unclear what is the root cause for instability. There are still many open problems in off-policy learning.**
+ * **It is still unclear what is the root cause for instability. 
+   There are still many open problems in off-policy learning.**
 
 ### Policy Optimization
 
@@ -161,7 +166,8 @@ Note that the version of the paper this note takes on may not be the latest. To 
  
    ![REINFORCE](pic/16.png)
  
- * Actor-Critic: the critic updates action-value function parameters, and the actor updates policy parameters, in the direction suggested by the critic.
+ * Actor-Critic: the critic updates action-value function parameters, 
+   and the actor updates policy parameters, in the direction suggested by the critic.
  
    ![Actor-Critic](pic/17.png)
  
@@ -178,19 +184,22 @@ Note that the version of the paper this note takes on may not be the latest. To 
 #### Policy
 
  * On-policy: evaluate or improve the behavioural policy (same-policy)
- * Off-policy: learn an optimal value function or policy, maybe following an unrelated behavioural policy (different-policy)
+ * Off-policy: learn an optimal value function or policy, maybe following an unrelated behavioural policy 
+   (different-policy)
 
 #### Others
 
- * Exploration-exploitation dilemma: The agent needs to exploit the currently best action, yet it has to explore the environment to find better actions.
- * Model-free: The agent learn with trail-and-error from experience explicitly. The model is not known or learned from experience.
+ * Exploration-exploitation dilemma: The agent needs to exploit the currently best action, 
+   yet it has to explore the environment to find better actions.
+ * Model-free: The agent learn with trail-and-error from experience explicitly. 
+   The model is not known or learned from experience.
  * Online mode: Models are trained on data acquired in sequence
  * Offline mode (batch mode): Models are trained on the entire data set.
  * Bootstrapping: an estimate of state or action value is updated from subsequent estimates.
 
 
 
-## Value Function (Draft)
+## Value Function
 
 ### Q-Learning
 
@@ -211,18 +220,49 @@ Note that the version of the paper this note takes on may not be the latest. To 
 #### Contributions
 
  * Stabilize the training of action value function approximation with CNN using experience replay and target network
- * Design an end-to-end RL approach, with only the pixels and the game score as inputs, so that only minimal domain 
-   knowledge is required
+ * Design an end-to-end RL approach, with only the pixels and the game score as inputs, 
+   so that only minimal domain knowledge is required
  * Train a flexible network with the same algorithm, network architecture and hyperparameters to perform well on 
    many different tasks
 
-### DQN Extensions
+### Double Deep Q-Network
 
-[Double DQN](https://arxiv.org/pdf/1509.06461.pdf)
+ * Update rule
+ 
+   ![Update rule](pic/20.gif)
+   
+   where the target ![Y_t^Q](pic/21.gif) is defined as
+   
+   ![target definition](pic/22.gif)
+  
+ * Deep Q-Network target function
+ 
+   ![DQN target](pic/22.gif)
+   
+   is equivalent to 
+   
+   ![DQN target equivalent](pic/23.gif)
+ 
+ * In deep Q-Network, both selection and evaluation use the same network, 
+   making it easily to overestimate the values of the actions. Thus, double deep Q-Network is proposed.
+   
+ * Double Deep Q-Network target function
+ 
+   ![Double DQN target](pic/24.gif)
+ 
+ * Double deep Q-Network uses two sets of parameters for Q function, 
+   ![theta](pic/theta_t.gif) for selection and ![theta prime](pic/theta_t_prime.gif) for evaluation.
+   The second set of weights can be updated symmetrically by switching the roles of 
+   ![theta prime](pic/theta_t_prime.gif) and ![theta](pic/theta_t.gif). 
+   
+
+### Prioritized Experience Replay
 
 [Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf)
 
 [SumTree](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/)
+
+### Dueling Architecture
 
 [Dueling Architecture](https://arxiv.org/pdf/1511.06581.pdf)
 
