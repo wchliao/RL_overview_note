@@ -22,32 +22,32 @@ To access the latest version of paper, please refer to [here](https://arxiv.org/
 
 ### Category
 
-* Supervised learning
-  * Classification 
-  * Regression
-* Unsupervised learning: representation learning
-  * Clustering 
-  * Density estimation
-* Reinforcement learning
+ * Supervised learning
+   * Classification 
+   * Regression
+ * Unsupervised learning: representation learning
+   * Clustering 
+   * Density estimation
+ * Reinforcement learning
 
 ### Elements
 
-* Dataset
-  * Non-overlapping training, validation and testing subsets
-* Cost/Loss function
-  * Category
-    * Training error measures the error on the training data
-    * Generalization error, or test error, measures the error on new input data
-  * Measurement
-    The following measurements are equivalent.
-    * Maximum likelihood estimation (MLE)
-	* Minimize KL divergence
-	* Minimize the cross-entropy
-	* negative log-likelihood (NLL)
-* Optimization procedure
-  * Gradient descent 
-  * Stochastic gradient descent
-* Model
+ * Dataset
+   * Non-overlapping training, validation and testing subsets
+ * Cost/Loss function
+   * Category
+     * Training error measures the error on the training data
+     * Generalization error, or test error, measures the error on new input data
+   * Measurement
+     The following measurements are equivalent.
+     * Maximum likelihood estimation (MLE)
+	 * Minimize KL divergence
+	 * Minimize the cross-entropy
+	 * negative log-likelihood (NLL)
+ * Optimization procedure
+   * Gradient descent 
+   * Stochastic gradient descent
+ * Model
 
 
 
@@ -55,31 +55,31 @@ To access the latest version of paper, please refer to [here](https://arxiv.org/
 
 ### Algorithms
 
-* Linear regression
-* Logistic regression
-* Support vector machine (SVM)
-* Decision tree
-* Boosting
+ * Linear regression
+ * Logistic regression
+ * Support vector machine (SVM)
+ * Decision tree
+ * Boosting
 
 ### Elements
 
-* Input layer
-* Output layer
-* Hidden layers
+ * Input layer
+ * Output layer
+ * Hidden layers
 
 ### Activation Function
 
-* Logistic
-* tanh
-* Rectified linear unit (ReLU)
+ * Logistic
+ * tanh
+ * Rectified linear unit (ReLU)
 
 ### Networks
 
-* Multilayer perceptron (MLP)
-* Convolutional neural network (CNN)
-* Recurrent neural network (RNN)
-  * Long short term memory network (LSTM)
-  * Gated recurrent unit (GRU)
+ * Multilayer perceptron (MLP)
+ * Convolutional neural network (CNN)
+ * Recurrent neural network (RNN)
+   * Long short term memory network (LSTM)
+   * Gated recurrent unit (GRU)
 
 ### Others
 
@@ -255,23 +255,25 @@ To access the latest version of paper, please refer to [here](https://arxiv.org/
    The second set of weights can be updated symmetrically by switching the roles of 
    ![theta prime](pic/theta_t_prime.gif) and ![theta](pic/theta_t.gif). 
    
-
 ### Prioritized Experience Replay
 
-[Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf)
-
-[SumTree](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/)
+ * Use importance sampling to make experience replay more efficient and effective
+ * The priority is gained from TD error
+ * Use Sum Tree to do the sampling efficiently. For more details, please refer to 
+   [here](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/).
 
 ### Dueling Architecture
 
-[Dueling Architecture](https://arxiv.org/pdf/1511.06581.pdf)
+ * First estimate state value function V(s) and associated advantage function A(s, a)
+ * Then combine them to estimate action value function Q(s, a)
+ * Converge faster than Q-learning
 
 
 
 ## Reference 
 
 1. Li, X. (2017). [Deep Reinforcement Learning: An Overview](https://arxiv.org/pdf/1701.07274.pdf). 
-   *arXiv preprint arXiv: 1701.07274*. 
+   *arXiv preprint arXiv:1701.07274*. 
 
 2. Watkins, C. J. C. H. & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
    *Machine Learning*, 8:279-292.
