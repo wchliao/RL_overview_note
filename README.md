@@ -225,7 +225,7 @@ To access the latest version of paper, please refer to [here](https://arxiv.org/
  * Train a flexible network with the same algorithm, network architecture and hyperparameters to perform well on 
    many different tasks
 
-### Double Deep Q-Network
+### Double Deep Q-Network (Double DQN)
 
  * Update rule
  
@@ -254,6 +254,11 @@ To access the latest version of paper, please refer to [here](https://arxiv.org/
    ![theta](pic/theta_t.gif) for selection and ![theta prime](pic/theta_t_prime.gif) for evaluation.
    The second set of weights can be updated symmetrically by switching the roles of 
    ![theta prime](pic/theta_t_prime.gif) and ![theta](pic/theta_t.gif). 
+ 
+ * Compare with Nature DQN
+ 
+   * Nature DQN: Old Q for action selection, current Q for action evaluation
+   * Double DQN: Current Q for action selection, old Q for action evaluation 
    
 ### Prioritized Experience Replay
 
