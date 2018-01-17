@@ -13,8 +13,12 @@ Only key words are mentioned in the note.
 
 To understand more about the details of reinforcement learning, please scrutinize the paper.
 
-Note that the version of the paper this note takes on may not be the latest. 
-To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
+P.S.
+
+1. The version of the paper this note takes on may not be the latest. 
+   To access the latest version of paper, please refer to [here](https://arxiv.org/pdf/1701.07274.pdf).
+1. Some important concepts that are not covered by the paper may also be included in this note.
+   The materials are also listed in Reference. 
 
 
 
