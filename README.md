@@ -279,6 +279,40 @@ P.S.
 
 
 
+## Policy
+
+ * [REINFORCE](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
+   * Sutton, R. S., McAllester, D., Singh, S., & Mansour, Y. (2000). 
+     [Policy gradient methods for reinforcement learning with function approximation](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf). 
+     In *the Annual Conference on Neural Information Processing Systems (NIPS)*.
+ * [Actor-Critic](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf)
+   * Konda, V. R., & Tsitsiklis, J. N. (2000). 
+     [Actor-critic algorithms](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf). 
+     In *Advances in Neural Information Processing Systems*, 12:1008–1014. 
+ * [Deep Deterministic Policy Gradient (DDPG)](http://proceedings.mlr.press/v32/silver14.pdf)
+   * Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
+     [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
+     In *the International Conference on Machine Learning (ICML)*.
+ * [A3C](https://arxiv.org/pdf/1602.01783.pdf)
+   * Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., & Kavukcuoglu, K. (2016). 
+     [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
+     In *the International Conference on Machine Learning (ICML)*.
+ * [Trust region policy optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
+   * Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P. (2015). 
+     [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
+     In *the International Conference on Machine Learning (ICML)*.
+ * [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
+   * Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). 
+     [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
+     *arXiv preprint arXiv:1707.06347*.
+ * [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
+   * Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
+     Riedmiller, M., & Silver, D. (2017). 
+     [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
+     *arXiv preprint arXiv:1707.02286*.
+
+
+
 ## Reference 
 
 1. Li, X. (2017). [Deep reinforcement learning: An overview](https://arxiv.org/pdf/1701.07274.pdf). 
@@ -288,7 +322,7 @@ P.S.
    [Reinforcement learning](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/).
    Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/
 
-1. Watkins, C. J. C. H. & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
+1. Watkins, C. J. C. H., & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
    *Machine Learning*, 8:279-292.
 
 1. Mnih, V., Kavukcuoglu, K., Sliver, D., Rusu, A. A., Veness, J., Bellemare, M. G.,
