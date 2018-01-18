@@ -281,31 +281,67 @@ P.S.
 
 ## Policy
 
- * [REINFORCE](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf)
+ * [REINFORCE](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf)
+ 
+   * Williams, R. J. (1992). 
+     [Simple statistical gradient-following algorithms for connectionist reinforcement learning](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf). 
+     Machine Learning, 8(3):229–256.
    * Sutton, R. S., McAllester, D., Singh, S., & Mansour, Y. (2000). 
      [Policy gradient methods for reinforcement learning with function approximation](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf). 
      In *the Annual Conference on Neural Information Processing Systems (NIPS)*.
+   
+   ![REINFORCE](pic/16.png)
+   
+   * Policy-only method
+     
  * [Actor-Critic](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf)
+ 
    * Konda, V. R., & Tsitsiklis, J. N. (2000). 
      [Actor-critic algorithms](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf). 
-     In *Advances in Neural Information Processing Systems*, 12:1008–1014. 
- * [Deep Deterministic Policy Gradient (DDPG)](http://proceedings.mlr.press/v32/silver14.pdf)
+     In *Advances in Neural Information Processing Systems*, 12:1008–1014.
+   * Actor-only methods drawbacks
+     * Large variance
+     * New gradient is estimated independently of past estimates.
+   * Critic-only methods drawbacks
+     * Do not try to optimize directly over a policy space
+     
+   ![Actor-Critic](pic/17.png)
+      
+ * [Deterministic Policy Gradient (DPG)](http://proceedings.mlr.press/v32/silver14.pdf)
+ 
    * Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
      [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
      In *the International Conference on Machine Learning (ICML)*.
+   * In continuous action spaces, stochastic policy gradient needs to sample from the distribution, which is inefficient.
+   * DPG is the expected gradient of the action-value function.
+   * Thus, DPG can be estimated much more efficiently than the usual stochastic policy gradient.
+     
+ * [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
+ 
+   * Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez, T., Tassa, Y., Silver, D., and Wierstra, D. (2016). 
+     [Continuous control with deep reinforcement learning](https://arxiv.org/pdf/1509.02971.pdf). 
+     In *the International Conference on Learning Representations (ICLR)*.
+     
  * [A3C](https://arxiv.org/pdf/1602.01783.pdf)
+ 
    * Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., & Kavukcuoglu, K. (2016). 
      [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
      In *the International Conference on Machine Learning (ICML)*.
+     
  * [Trust region policy optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
+ 
    * Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P. (2015). 
      [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
      In *the International Conference on Machine Learning (ICML)*.
+     
  * [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
+ 
    * Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). 
      [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
      *arXiv preprint arXiv:1707.06347*.
+     
  * [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
+ 
    * Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
      Riedmiller, M., & Silver, D. (2017). 
      [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
