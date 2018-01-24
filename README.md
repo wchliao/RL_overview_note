@@ -349,6 +349,40 @@ P.S.
 
 
 
+## Reward
+
+### Category
+
+ * Reward functions not available for RL problem
+   * Behavioral cloning (apprenticeship learning / Learning from demonstration)
+     * Supervised: state -> action
+   * Inverse reinforcement learning
+     * Given observation of optimal behaviour -> Determine a reward
+ * Reward functions available for RL problem 
+
+###  [Deep Q-learning from Demonstrations (DQfD)](https://arxiv.org/pdf/1704.03732.pdf)
+ * Hester, T., Vecerik, M., Pietquin, O., Lanctot, M., Schaul, T., Piot, B., Sendonaris, A., Dulac-Arnold, G., 
+   Osband, I., Agapiou, J., Leibo, J. Z., and Gruslys, A. (2017). 
+   [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/pdf/1704.03732.pdf). 
+   *arXiv preprint arXiv:1704.03732*.
+ * 4 losses are used:
+   * 1-step double Q-learning loss
+   * N-step double Q-learning loss
+   * Supervised large margin classification loss
+   * L2 regularization loss on the network weights and bias
+ * Supervised loss: classification of the demonstrator's action
+ * Q-learning loss: Ensure that the network satisfies the Bellman equation and can be used as a strating point 
+   for TD learning
+ * After pre-train, DQfD self-generates samples and mixes them with demonstration data.
+
+### Generative Adversarial imitation learning
+
+ * Discriminator as the reward
+ * Generator as the policy
+ 
+
+
+
 ## Reference 
 
 1. Li, X. (2017). [Deep reinforcement learning: An overview](https://arxiv.org/pdf/1701.07274.pdf). 
