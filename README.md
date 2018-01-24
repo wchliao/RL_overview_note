@@ -379,7 +379,33 @@ P.S.
 
  * Discriminator as the reward
  * Generator as the policy
- 
+
+
+
+## Model
+
+ * An agent's representation of the environment, including the transition model and the reward model.
+ * Model-free RL
+   * Handle unknown dynamic systems
+   * Usually require large number of samples, which may be costly or prohibitive to obtain for real physical systems.
+ * Model-based RL
+   * Learn value function and/or policy in a data-efficient way
+   * Suffer from the issue of model identification
+     * The estimated models may not be accurate
+     * The performance is limited by the estimated model
+
+
+
+## Planning
+
+ * Construct a value function or policy, usually with a model
+ * Usually related to model-based RL methods
+
+
+
+## Exploration
+
+ * Use exploration to reduce uncertainty about the reward function and transition probabilities of the environment
 
 
 
