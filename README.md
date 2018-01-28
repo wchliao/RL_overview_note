@@ -98,13 +98,13 @@ P.S.
 
 ### Fundamental Elements
 
- * State: ![state](pic/01.gif)
+ * State: ![state](img/01.gif)
  
- * Policy: ![policy](pic/02.gif)
+ * Policy: ![policy](img/02.gif)
  
  * Reward: 
  
-   ![discounted reward](pic/03.gif)
+   ![discounted reward](img/03.gif)
 
 ### Value Function
 
@@ -112,68 +112,68 @@ P.S.
 
  * State value
  
-   ![state value](pic/04.gif)
+   ![state value](img/04.gif)
    
  * Optimal state value: 
  
-   ![optimal state value](pic/05.gif)
+   ![optimal state value](img/05.gif)
    
-   ![optimal state value](pic/06.gif)
+   ![optimal state value](img/06.gif)
  
  * Action value
  
-   ![action value](pic/07.gif)
+   ![action value](img/07.gif)
    
  * Optimal action value
  
-   ![optimal action value](pic/08.gif)
+   ![optimal action value](img/08.gif)
    
 ### Temporal Difference (TD) Learning
 
  * Markov Decision Process (MDP): satisfy Markov property, 
    i.e., the future depends only on the current state and action, but not on the past  
  
- * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](pic/18.gif).
+ * If RL problem satisfies the Markov property, it is defined by the 5-tuple ![5-tuple](img/18.gif).
  
  * TD learning is usually refer to the learning methods for value function evaluation
  
  * Update rule
  
-   ![value update rule](pic/09.gif)
+   ![value update rule](img/09.gif)
    
  * TD error
  
-   ![TD error](pic/10.gif)
+   ![TD error](img/10.gif)
  
  * Some tabular algorithms
  
-   ![TD algorithms](pic/11.png)
+   ![TD algorithms](img/11.png)
    
-   ![SARSA](pic/12.png)
+   ![SARSA](img/12.png)
    
-   ![Q learning](pic/13.png)
+   ![Q learning](img/13.png)
  
  * Algorithm with function approximation
  
-   ![algorithm with function approximation](pic/14.png)
+   ![algorithm with function approximation](img/14.png)
  
  * **It is still unclear what is the root cause for instability. 
    There are still many open problems in off-policy learning.**
 
 ### Policy Optimization
 
- * Advantage: ![advantage](pic/15.gif)
+ * Advantage: ![advantage](img/15.gif)
  
    Here the value function V(s) is the baseline.
 
  * REINFORCE: an policy-based algorithm.
  
-   ![REINFORCE](pic/16.png)
+   ![REINFORCE](img/16.png)
  
  * Actor-Critic: the critic updates action-value function parameters, 
    and the actor updates policy parameters, in the direction suggested by the critic.
  
-   ![Actor-Critic](pic/17.png)
+   ![Actor-Critic](img/17.png)
  
  * **The distinct difference between a "shallow" RL and a deep RL is what function approximator is used.**
 
@@ -209,7 +209,7 @@ P.S.
 
 #### Algorithm
 
- ![Q learning](pic/13.png)
+ ![Q learning](img/13.png)
  
 #### Drawback
  
@@ -219,7 +219,7 @@ P.S.
 
 #### Algorithm
  
- ![DQN](pic/19.png)
+ ![DQN](img/19.png)
 
 #### Contributions
 
@@ -233,31 +233,31 @@ P.S.
 
  * Update rule
  
-   ![Update rule](pic/20.gif)
+   ![Update rule](img/20.gif)
    
-   where the target ![Y_t^Q](pic/21.gif) is defined as
+   where the target ![Y_t^Q](img/21.gif) is defined as
    
-   ![target definition](pic/22.gif)
+   ![target definition](img/22.gif)
   
  * Deep Q-Network target function
  
-   ![DQN target](pic/22.gif)
+   ![DQN target](img/22.gif)
    
    is equivalent to 
    
-   ![DQN target equivalent](pic/23.gif)
+   ![DQN target equivalent](img/23.gif)
  
  * In deep Q-Network, both selection and evaluation use the same network, 
    making it easily to overestimate the values of the actions. Thus, double deep Q-Network is proposed.
    
  * Double Deep Q-Network target function
  
-   ![Double DQN target](pic/24.gif)
+   ![Double DQN target](img/24.gif)
  
  * Double deep Q-Network uses two sets of parameters for Q function, 
-   ![theta](pic/theta_t.gif) for selection and ![theta prime](pic/theta_t_prime.gif) for evaluation.
+   ![theta](img/theta_t.gif) for selection and ![theta prime](img/theta_t_prime.gif) for evaluation.
    The second set of weights can be updated symmetrically by switching the roles of 
-   ![theta prime](pic/theta_t_prime.gif) and ![theta](pic/theta_t.gif). 
+   ![theta prime](img/theta_t_prime.gif) and ![theta](img/theta_t.gif). 
  
  * Compare with Nature DQN
  
@@ -290,7 +290,7 @@ P.S.
    [Policy gradient methods for reinforcement learning with function approximation](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf). 
    In *the Annual Conference on Neural Information Processing Systems (NIPS)*.
    
- ![REINFORCE](pic/16.png)
+ ![REINFORCE](img/16.png)
    
  * Policy-only method
      
@@ -305,7 +305,7 @@ P.S.
  * Critic-only methods drawbacks
    * Do not try to optimize directly over a policy space
      
- ![Actor-Critic](pic/17.png)
+ ![Actor-Critic](img/17.png)
       
 ### [Deterministic Policy Gradient (DPG)](http://proceedings.mlr.press/v32/silver14.pdf)
  
