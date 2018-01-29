@@ -266,6 +266,8 @@ P.S.
    
 ### [Prioritized Experience Replay](https://arxiv.org/pdf/1511.05952.pdf)
 
+ ![Prioritized experience replay](img/25.png)
+
  * Use importance sampling to make experience replay more efficient and effective
  * The priority is gained from TD error
  * Use Sum Tree to do the sampling efficiently. For more details, please refer to 
@@ -273,8 +275,12 @@ P.S.
 
 ### [Dueling Architecture](https://arxiv.org/pdf/1511.06581.pdf)
 
- * First estimate state value function V(s) and associated advantage function A(s, a)
- * Then combine them to estimate action value function Q(s, a)
+ ![Dueling Q-network](img/26.png)
+
+ * The lower layers of the dueling network are convolutional as in the original DQNs
+ * Use two sequences of fully connected layers to estimate state value function V(s) and 
+   associated advantage function A(s, a)
+ * Then, combine them to estimate action value function Q(s, a)
  * Converge faster than Q-learning
 
 
