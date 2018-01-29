@@ -289,38 +289,26 @@ P.S.
 
 ### [REINFORCE](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf)
  
- * Williams, R. J. (1992). 
-   [Simple statistical gradient-following algorithms for connectionist reinforcement learning](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf). 
-   Machine Learning, 8(3):229–256.
- * Sutton, R. S., McAllester, D., Singh, S., & Mansour, Y. (2000). 
-   [Policy gradient methods for reinforcement learning with function approximation](https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf). 
-   In *the Annual Conference on Neural Information Processing Systems (NIPS)*.
-   
  ![REINFORCE](img/16.png)
    
- * Policy-only method
+ * A policy gradient method
      
 ### [Actor-Critic](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf)
  
- * Konda, V. R., & Tsitsiklis, J. N. (2000). 
-   [Actor-critic algorithms](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf). 
-   In *Advances in Neural Information Processing Systems*, 12:1008–1014.
+ ![Actor-Critic](img/17.png)
+ 
  * Actor-only methods drawbacks
    * Large variance
    * New gradient is estimated independently of past estimates.
  * Critic-only methods drawbacks
    * Do not try to optimize directly over a policy space
-     
- ![Actor-Critic](img/17.png)
       
 ### [Deterministic Policy Gradient (DPG)](http://proceedings.mlr.press/v32/silver14.pdf)
  
- * Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
-   [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
-   In *the International Conference on Machine Learning (ICML)*.
- * In continuous action spaces, stochastic policy gradient needs to sample from the distribution, which is inefficient.
- * DPG is the expected gradient of the action-value function.
- * Thus, DPG can be estimated much more efficiently than the usual stochastic policy gradient.
+ * Stochastic policy gradient needs to sample from the distribution.
+ * DPG's gradient is deterministic, which is the expected gradient of the action-value function.
+ * In continuous action spaces, sampling the distribution is inefficient.
+   DPG, on the other hand, can be done much more efficiently than the stochastic policy gradient.
      
 ### [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
  
@@ -450,5 +438,17 @@ P.S.
 
 1. Wang, Z., Schaul, T., Hessel, M., van Hasselt, H., Lanctot, M., & de Freitas, N. (2016b).
    [Dueling network architectures for deep reinforcement learning](https://arxiv.org/pdf/1511.06581.pdf).
+   In *the International Conference on Machine Learning (ICML)*.
+
+1. Williams, R. J. (1992). 
+   [Simple statistical gradient-following algorithms for connectionist reinforcement learning](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf). 
+   *Machine Learning*, 8(3):229–256.
+
+1. Konda, V. R., & Tsitsiklis, J. N. (2000). 
+   [Actor-critic algorithms](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf). 
+   In *Advances in Neural Information Processing Systems*, 12:1008–1014.
+
+1. Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
+   [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
    In *the International Conference on Machine Learning (ICML)*.
 
