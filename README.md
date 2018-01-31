@@ -311,10 +311,13 @@ P.S.
    DPG, on the other hand, can be done much more efficiently than the stochastic policy gradient.
      
 ### [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
- 
- * Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez, T., Tassa, Y., Silver, D., and Wierstra, D. (2016). 
-   [Continuous control with deep reinforcement learning](https://arxiv.org/pdf/1509.02971.pdf). 
-   In *the International Conference on Learning Representations (ICLR)*.
+
+ ![DDPG](img/27.png)
+
+ * Combine DQN and DPG together
+   * DQN was originally used in concrete action spaces
+   * DPG was proposed to deal with continuous action space problems
+   * DDPG performs better than DPG  
      
 ### [A3C](https://arxiv.org/pdf/1602.01783.pdf)
  
@@ -451,4 +454,8 @@ P.S.
 1. Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
    [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
    In *the International Conference on Machine Learning (ICML)*.
+   
+1. Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez, T., Tassa, Y., Silver, D., & Wierstra, D. (2016). 
+   [Continuous control with deep reinforcement learning](https://arxiv.org/pdf/1509.02971.pdf). 
+   In *the International Conference on Learning Representations (ICLR)*.
 
