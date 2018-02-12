@@ -319,11 +319,14 @@ P.S.
    * DPG was proposed to deal with continuous action space problems
    * DDPG performs better than DPG  
      
-### [A3C](https://arxiv.org/pdf/1602.01783.pdf)
- 
- * Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., & Kavukcuoglu, K. (2016). 
-   [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
-   In *the International Conference on Machine Learning (ICML)*.
+### [Asynchronous Advantage Actor-Critic (A3C)](https://arxiv.org/pdf/1602.01783.pdf)
+
+ ![A3C](img/28.png)
+
+ * A3C asynchronously executes multiple agents in parallel 
+   * The combination of RL with deep neural networks was thought to be unstable. 
+     However, A3C can decorrelate the agent's data into a more stationary process.
+   * A3C is able to run on a single machine with a standard multi-core CPU. 
      
 ### [Trust region policy optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
  
@@ -459,3 +462,6 @@ P.S.
    [Continuous control with deep reinforcement learning](https://arxiv.org/pdf/1509.02971.pdf). 
    In *the International Conference on Learning Representations (ICLR)*.
 
+1. Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., & Kavukcuoglu, K. (2016). 
+   [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
+   In *the International Conference on Machine Learning (ICML)*.
