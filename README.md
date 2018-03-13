@@ -330,22 +330,22 @@ P.S.
      
 ### [Trust region policy optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
  
- * Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P. (2015). 
+ * Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P.  
    [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
-   In *the International Conference on Machine Learning (ICML)*.
+   In *the International Conference on Machine Learning (ICML)*. 2015.
      
 ### [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
  
- * Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). 
+ * Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O.  
    [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
-   *arXiv preprint arXiv:1707.06347*.
+   *arXiv preprint arXiv:1707.06347*. 2017. 
      
 ### [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
  
  * Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
-   Riedmiller, M., & Silver, D. (2017). 
+   Riedmiller, M., and Silver, D.  
    [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
-   *arXiv preprint arXiv:1707.02286*.
+   *arXiv preprint arXiv:1707.02286*. 2017.
 
 
 
@@ -362,9 +362,9 @@ P.S.
 
 ###  [Deep Q-learning from Demonstrations (DQfD)](https://arxiv.org/pdf/1704.03732.pdf)
  * Hester, T., Vecerik, M., Pietquin, O., Lanctot, M., Schaul, T., Piot, B., Sendonaris, A., Dulac-Arnold, G., 
-   Osband, I., Agapiou, J., Leibo, J. Z., and Gruslys, A. (2017). 
+   Osband, I., Agapiou, J., Leibo, J. Z., and Gruslys, A.  
    [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/pdf/1704.03732.pdf). 
-   *arXiv preprint arXiv:1704.03732*.
+   *arXiv preprint arXiv:1704.03732*. 2017.
  * 4 losses are used:
    * 1-step double Q-learning loss
    * N-step double Q-learning loss
@@ -411,57 +411,60 @@ P.S.
 
 ## Reference 
 
-1. Li, X. (2017). [Deep reinforcement learning: An overview](https://arxiv.org/pdf/1701.07274.pdf). 
-   *arXiv preprint arXiv:1701.07274*. 
+1. Li, X. 
+   [Deep reinforcement learning: An overview](https://arxiv.org/pdf/1701.07274.pdf). 
+   *arXiv preprint arXiv:1701.07274*. 2017.
 
 1. Zhou, M.
    [Reinforcement learning](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/).
-   Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/
+   Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/. 2016.
 
-1. Watkins, C. J. C. H., & Dayan, P. (1992). [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
-   *Machine Learning*, 8:279-292.
+1. Watkins, C. J. C. H. and Dayan, P. 
+   [Q-Learning](https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf). 
+   *Machine Learning*, 8:279-292. 1992.
 
 1. Mnih, V., Kavukcuoglu, K., Sliver, D., Rusu, A. A., Veness, J., Bellemare, M. G.,
    Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., 
-   Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., & Hassabis, D. (2015). 
+   Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., and Hassabis, D. 
    [Human-level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf). 
-   *Nature*, 518(7540):529-533.
+   *Nature*, 518(7540):529-533. 2015.
 
-1. van Hasselt, H., Guez, A., & Silver, D. (2016a). 
+1. van Hasselt, H., Guez, A., and Silver, D. 
    [Deep reinforcement learning with double Q-learning](https://arxiv.org/pdf/1509.06461.pdf).
-   In *the AAAI Conference on Artificial Intelligence (AAAI)*.
+   In *the AAAI Conference on Artificial Intelligence (AAAI)*. 2016a.
 
-1. Silver, D. (2016). [Tutorial: Deep reinforcement learning](https://icml.cc/2016/tutorials/deep_rl_tutorial.pdf).
-   In *the International Conference on Machine Learning (ICML)*.
+1. Silver, D. 
+   [Tutorial: Deep reinforcement learning](https://icml.cc/2016/tutorials/deep_rl_tutorial.pdf).
+   In *the International Conference on Machine Learning (ICML)*. 2016.
 
-1. Schaul, T., Quan, J., Antonoglou, I., & Silver, D. (2016). 
+1. Schaul, T., Quan, J., Antonoglou, I., and Silver, D. 
    [Prioritized experience replay](https://arxiv.org/pdf/1511.05952.pdf).
-   In *the International Conference on Learning Representations (ICLR)*.
+   In *the International Conference on Learning Representations (ICLR)*. 2016.
 
 1. Zhou, M. (2017). 
    [Prioritized experience replay (DQN) (Tensorflow)](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/).
-   Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/
+   Retrieved from https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/4-6-prioritized-replay/. 2017.
 
-1. Wang, Z., Schaul, T., Hessel, M., van Hasselt, H., Lanctot, M., & de Freitas, N. (2016b).
+1. Wang, Z., Schaul, T., Hessel, M., van Hasselt, H., Lanctot, M., and de Freitas, N. 
    [Dueling network architectures for deep reinforcement learning](https://arxiv.org/pdf/1511.06581.pdf).
-   In *the International Conference on Machine Learning (ICML)*.
+   In *the International Conference on Machine Learning (ICML)*. 2016b.
 
-1. Williams, R. J. (1992). 
+1. Williams, R. J. 
    [Simple statistical gradient-following algorithms for connectionist reinforcement learning](https://link.springer.com/content/pdf/10.1007%2FBF00992696.pdf). 
-   *Machine Learning*, 8(3):229–256.
+   *Machine Learning*, 8(3):229–256. 1992.
 
-1. Konda, V. R., & Tsitsiklis, J. N. (2000). 
+1. Konda, V. R. and Tsitsiklis, J. N. 
    [Actor-critic algorithms](https://papers.nips.cc/paper/1786-actor-critic-algorithms.pdf). 
-   In *Advances in Neural Information Processing Systems*, 12:1008–1014.
+   In *Advances in Neural Information Processing Systems*, 12:1008–1014. 2000.
 
-1. Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., & Riedmiller, M. (2014). 
+1. Silver, D., Lever, G., Heess, N., Degris, T., Wierstra, D., and Riedmiller, M.  
    [Deterministic policy gradient algorithms](http://proceedings.mlr.press/v32/silver14.pdf). 
-   In *the International Conference on Machine Learning (ICML)*.
+   In *the International Conference on Machine Learning (ICML)*. 2014.
    
-1. Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez, T., Tassa, Y., Silver, D., & Wierstra, D. (2016). 
+1. Lillicrap, T. P., Hunt, J. J., Pritzel, A., Heess, N., Erez, T., Tassa, Y., Silver, D., and Wierstra, D.  
    [Continuous control with deep reinforcement learning](https://arxiv.org/pdf/1509.02971.pdf). 
-   In *the International Conference on Learning Representations (ICLR)*.
+   In *the International Conference on Learning Representations (ICLR)*. 2016.
 
-1. Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., & Kavukcuoglu, K. (2016). 
+1. Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., and Kavukcuoglu, K.  
    [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
-   In *the International Conference on Machine Learning (ICML)*.
+   In *the International Conference on Machine Learning (ICML)*. 2016.
