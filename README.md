@@ -330,9 +330,20 @@ P.S.
      
 ### [Trust region policy optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
  
- * Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P.  
-   [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
-   In *the International Conference on Machine Learning (ICML)*. 2015.
+ * By mathematical proof, we can derive that 
+ 
+   ![Kakade and Langford lower bound](img/29.png).
+ 
+ * Then, ideally we can use the following algorithm to iteratively update policy.
+ 
+   ![TRPO](img/30.png)
+ 
+ * The paper then do the following tricks to make the algorithm practical. 
+   * Introduce a trust region constraint. 
+   * Approximate the trust region constraint by the average KL divergence constraint.
+   * Replace the expectations and Q value in the optimization problem by sample estimates, single path approach and 
+     vine approach.
+   * Solve the constrained optimization problem approximately to update the policy’s parameter vector.
      
 ### [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
  
@@ -468,3 +479,7 @@ P.S.
 1. Mnih, V., Badia, A. P., Mirza, M., Graves, A., Harley, T., Lillicrap, T. P., Silver, D., and Kavukcuoglu, K.  
    [Asynchronous methods for deep reinforcement learning](https://arxiv.org/pdf/1602.01783.pdf). 
    In *the International Conference on Machine Learning (ICML)*. 2016.
+
+1. Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P.  
+   [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
+   In *the International Conference on Machine Learning (ICML)*. 2015.
