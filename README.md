@@ -347,10 +347,26 @@ P.S.
      
 ### [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
  
- * Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O.  
-   [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
-   *arXiv preprint arXiv:1707.06347*. 2017. 
-     
+ * TRPO is complicated and not compatible with architectures that include noise or parameter sharing.
+ * PPO is proposed to improve TRPO.
+   * Have the stability and reliability of trust-region methods 
+   * Much simpler to implement 
+   * Applicable in more general settings
+   * Have better overall performance
+ * Original surrogate objective
+ 
+ ![Original surrogate objective](img/31.png)
+ 
+ * Clipped surrogate objective
+ 
+ ![Clipped surrogate objective](img/32.png)
+ 
+ * KL-penalized objective
+ 
+ ![KL-penalized objective](img/33.png)
+ 
+ * Performance: clipped > KL-penalized > original
+   
 ### [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
  
  * Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
@@ -483,3 +499,8 @@ P.S.
 1. Schulman, J., Levine, S., Moritz, P., Jordan, M. I., and Abbeel, P.  
    [Trust region policy optimization](https://arxiv.org/pdf/1502.05477.pdf). 
    In *the International Conference on Machine Learning (ICML)*. 2015.
+
+1. Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O.  
+   [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
+   *arXiv preprint arXiv:1707.06347*. 2017.
+   
