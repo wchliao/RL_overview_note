@@ -366,6 +366,11 @@ P.S.
  ![KL-penalized objective](img/33.png)
  
  * Performance: clipped > KL-penalized > original
+ * Algorithm:
+ 
+ ![PPO by OpenAI](img/34.png)
+ 
+ ![PPO by DeepMind](img/35.png)
    
 ### [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
  
