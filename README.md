@@ -374,10 +374,10 @@ P.S.
    
 ### [Distributed Proximal Policy Optimization (DPPO)](https://arxiv.org/pdf/1707.02286.pdf)
  
- * Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
-   Riedmiller, M., and Silver, D.  
-   [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
-   *arXiv preprint arXiv:1707.02286*. 2017.
+ * Combine PPO with A3C
+ * Algorithm:
+ 
+ ![DPPO](img/36.png)
 
 
 
@@ -508,4 +508,9 @@ P.S.
 1. Schulman, J., Wolski, F., Dhariwal, P., Radford, A., and Klimov, O.  
    [Proximal Policy Optimization Algorithms](https://arxiv.org/pdf/1707.06347.pdf).
    *arXiv preprint arXiv:1707.06347*. 2017.
+   
+1. Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, A., 
+   Riedmiller, M., and Silver, D.  
+   [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
+   *arXiv preprint arXiv:1707.02286*. 2017.
    
