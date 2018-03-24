@@ -387,16 +387,12 @@ P.S.
 
  * Reward functions not available for RL problem
    * Behavioral cloning (apprenticeship learning / Learning from demonstration)
-     * Supervised: state -> action
+     * Supervised: state → action
    * Inverse reinforcement learning
-     * Given observation of optimal behaviour -> Determine a reward
+     * Given observation of optimal behaviour → Determine a reward
  * Reward functions available for RL problem 
 
 ###  [Deep Q-learning from Demonstrations (DQfD)](https://arxiv.org/pdf/1704.03732.pdf)
- * Hester, T., Vecerik, M., Pietquin, O., Lanctot, M., Schaul, T., Piot, B., Sendonaris, A., Dulac-Arnold, G., 
-   Osband, I., Agapiou, J., Leibo, J. Z., and Gruslys, A.  
-   [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/pdf/1704.03732.pdf). 
-   *arXiv preprint arXiv:1704.03732*. 2017.
  * 4 losses are used:
    * 1-step double Q-learning loss
    * N-step double Q-learning loss
@@ -406,8 +402,22 @@ P.S.
  * Q-learning loss: Ensure that the network satisfies the Bellman equation and can be used as a strating point 
    for TD learning
  * After pre-train, DQfD self-generates samples and mixes them with demonstration data.
+ * DQfD differs from Prioritized Dueling Double Deep Q-Networks (PDD DQN) in 6 key ways:
+   * Demonstration data: DQFD is given a set of demonstration data, which it retains in its replay buffer permanently.
+   * Pre-training: DQfD initially trains solely on the demonstration data before starting any interaction with the 
+     environment.
+   * Supervised losses: In addition to TD losses, a large margin supervised loss is applied that pushed the value of the
+     demonstrator's actions above the other action values.
+   * L2 regularization losses: The algorithm also adds L2 regularization losses on the network weights to prevent 
+     overfitting on the demonstration data.
+   * N-step TD losses: The agent updates its Q-network with targets from a mix of 1-step and n-step returns.
+   * Demonstration priority bonus: The priorities of demonstration transition are given a bonus of 
+     ![epsilon_d](img/epsilon_d.gif), to boost the frequency that they are sampled.
+ * Algorithm:
+ 
+ ![DQfD](img/37.png)
 
-### Generative Adversarial imitation learning
+### Generative Adversarial Imitation Learning
 
  * Discriminator as the reward
  * Generator as the policy
@@ -513,4 +523,9 @@ P.S.
    Riedmiller, M., and Silver, D.  
    [Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/pdf/1707.02286.pdf). 
    *arXiv preprint arXiv:1707.02286*. 2017.
+   
+1. Hester, T., Vecerik, M., Pietquin, O., Lanctot, M., Schaul, T., Piot, B., Sendonaris, A., Dulac-Arnold, G., 
+   Osband, I., Agapiou, J., Leibo, J. Z., and Gruslys, A.  
+   [Deep Q-learning from Demonstrations](https://arxiv.org/pdf/1704.03732.pdf). 
+   *arXiv preprint arXiv:1704.03732*. 2017.
    
