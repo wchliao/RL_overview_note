@@ -451,6 +451,12 @@ P.S.
 
 
 
+## Summary
+
+See Chapter 8 Brief Summary in the [paper](paper.pdf).
+
+
+
 ## Reference 
 
 1. Li, X. 
